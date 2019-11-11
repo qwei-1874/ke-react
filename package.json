@@ -3,18 +3,32 @@
 	"displayName": "ke-react-quick-generator",
 	"publisher": "weiqiang",
 	"description": "generator common code",
-	"version": "0.0.1",
+	"version": "0.0.2",
+	 "repository": {
+    "type": "git",
+    "url": "hhttps://github.com/mushang11/ke-react"
+  },
 	"engines": {
 		"vscode": "1.40.0"
 	},
 	"categories": [
-		"Other"
+		"Snippets"
 	],
 	"activationEvents": [
 		"onCommand:extension.helloWorld"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
+		"snippets": [
+      {
+        "language": "javascript",
+        "path": "./src/snippets/file.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./src/snippets/file.json"
+      }
+    ],
 		"commands": [
 			{
 				"command": "extension.helloWorld",
